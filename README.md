@@ -2,3 +2,6 @@
 
 <img src="imp_300.PNG">
 https://developers.google.com/machine-learning/crash-course/training-and-test-sets/splitting-data
+
+
+this working one python_easy.py
