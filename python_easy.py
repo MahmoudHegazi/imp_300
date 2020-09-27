@@ -22,6 +22,7 @@ y = dataset.iloc[:, -1].values
 dates_row = dataset.loc[4, :]
 xt = pd.Series(dates_row).values
 nx = pd.read_excel('Data.xlsx')
+# it must be the same header in the excel to get the data don't forget to edit it
 df = pd.DataFrame(nx, columns= ['Name', 'Price'])
 
 
