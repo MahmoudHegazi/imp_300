@@ -23,14 +23,18 @@ dates_row = dataset.loc[4, :]
 xt = pd.Series(dates_row).values
 nx = pd.read_excel('Data.xlsx')
 # it must be the same header in the excel to get the data don't forget to edit it
-df = pd.DataFrame(nx, columns= ['Name', 'Price'])
+
+# easy now we can get the column we need
+print df['Name']
+
+df = pd.DataFrame(nx, columns= ['Name', 'P Number'])
 
 
 print df
 
 
-
-print xt
+# remove this but it's important what below it 
+#print xt
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
